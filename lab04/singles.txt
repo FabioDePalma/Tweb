@@ -54,4 +54,3 @@ Diana Ma,F,22,ISTP,Linux,24,25
 Fabio De,M,99,ISTP,Linux,21,23
 Daniela Cretu,F,52,ENFP,Windows,40,60
 peppuccio mercoledi,M,59,ENFP,Windows,0,99
-,,,,,,
