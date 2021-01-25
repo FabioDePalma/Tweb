@@ -1,0 +1,572 @@
+
+body{
+  background-color: #4A5859;
+  margin: auto;
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom:0;
+  text-align: center;
+  background-color:#F4B860;
+}
+
+h2{
+  font-size: 2vw;
+}
+.backgroundBar{
+  width: 100%;
+}
+
+
+
+
+
+
+/* section CARD HAMBURGER */
+.column {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-bottom: 20%;
+
+}
+.card p{
+  font-size: 1vw;
+}
+
+.card h2{
+  font-size: 2vw;
+}
+
+
+.row{
+  display: grid;
+  position:absolute;
+  grid-template-columns:30% 30% 30%  ;
+  align-items: center;
+
+  margin-left: 10%;
+  margin-right: auto;
+}
+.card{
+
+  background-color: transparent;
+  width: 100%;
+  height: 138%; 
+  user-select: none;
+}
+
+.card-inner{
+  height: 100%;
+  width:100%;
+  background-color: #F4B860;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.904);
+
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front{
+
+  backface-visibility: hidden;
+  width: 100%;
+
+}
+.card-front>img{
+  width: 100%;
+}
+.card-back {
+  background-color: #F4B860;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  color: white;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  color: #32373B;
+  cursor: pointer;
+}
+
+
+.card-back > h2{
+  color: #32373B;
+  
+}
+
+.card-back>span{
+  color: rgb(77, 2, 2);
+  font-size: 2vw;
+}
+
+/* end CARD HAMBURGER */
+
+
+
+/* section user up right with disconnect */
+.user, #cart{
+  cursor: pointer;
+  float: right;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+  color: white;
+  border-radius: 20px;
+  padding: 13px;
+  background-color: #32373B;
+  margin-left: 10px;
+}
+
+.user i{ /* font menulato*/
+  padding-right:5px;
+} 
+
+
+.user input{
+  background-color: rgba(255, 255, 255, 0.596);
+  border: 1px solid #667;
+  border-radius: 10px;
+
+  transition-duration: 0.4s;
+}
+.user input:hover{
+  background-color: white;
+}
+/* end USER */
+
+/* section NAVBAR */
+.nav, .nav-bot{
+  margin-top: 0;
+  background-color: #32373B;
+  height: 120px;
+  width: 100%;
+
+}
+.nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav li{
+  list-style: none;
+  position: relative;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  height:50px;
+  padding-top: 20px;
+}
+.nav ul li a{
+  display: block;
+
+  padding: 50px 50px 10px 50px;
+
+
+  margin-left:5px;
+  background: url('../img/navbar50.png') top no-repeat;
+}
+.menulato{
+  display: none;
+  float: right;
+  color: white;
+  font-size: 50px;
+  padding-right: 5px;
+
+  width: 10%;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #F4B860;
+}
+
+.navhidden{
+  position: relative;
+  margin-left: auto;
+  width: 70%;
+  margin-right: 60px;
+  margin-top: 100px;
+
+  background-color: #32373B;
+  padding: 12px;
+}
+
+.navhidden a{
+  display: block;
+  text-decoration: none;
+  padding: 50px;
+  background: url('../img/navbar50.png') right no-repeat;
+}
+.menu{
+  clear: both;
+}
+@media only screen and (max-width: 600px){
+  .menulato{
+    display: block;
+    position:relative;
+    cursor: pointer;
+    text-align: right;
+
+    width: 100%;
+    margin: 0;
+    font-size: 7vw;
+
+  }
+  .user, #cart{
+    top:0;
+  }
+  .nav{display: none;}
+  .nav ul{ display: none; }
+
+  .nav a.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .nav a {
+    display: block;
+
+  }
+
+}
+@media screen and (min-width: 600px){
+  .navhidden{
+    display:none;
+  }
+  
+
+}
+/* end NAVBAR */
+
+
+
+
+
+/* section MAP */
+.traceus{
+  position: relative;
+}
+
+
+.row-des{
+  display: block;
+  overflow:hidden;
+  padding-bottom:50%;
+  padding-right: 50%;
+  position:absolute;
+  height:auto
+}
+iframe{
+  display: inline;
+  position: absolute;
+  left:10%;
+  top:5%;
+  height:70%;
+  width:70%;
+}
+#info {
+  display: block;
+  font-size: 2vw;
+  position:absolute;
+  color:black;
+  right: 20%;
+  top:20%;
+  list-style: none;
+  background-color: rgba(222, 184, 135, 0.658);
+  border-radius: 20px;
+  padding: 10px;
+
+}
+/* end MAP */
+
+
+/* section MAKE HAMBURGER */
+.ingredients{
+  background-color: #F4B860;
+  border: 1px solid #667;
+  border-radius: 10px;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+  font-size: 0.8vw;
+  margin: 10px;
+  overflow:hidden;
+  padding:10%;
+  padding-left: 0;
+
+}
+#ing{
+  padding-top: 10px;
+  width: 10%;
+  clear: both;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  grid-gap: 10px;
+  float: left;
+}
+.makehamburger{
+  display: inline-block;
+  width: 50%;
+}
+.makehamburger img{
+  width: 100%;
+  height: auto;
+}
+.setting{
+  display:none;
+  margin: 0;
+  width: 95%;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding:10px;
+  overflow:auto;
+}
+
+
+#namehamburger>*{
+  font-size: 2vw;
+  border-radius: 15px;
+}
+
+.mylist{
+  display: block;
+  margin-top: 150px;
+  background-color: #32373B;
+  color: white;
+  width: 20%;
+  height: 20%;
+  border-radius: 15px;
+  font-size: 2vw;
+  transition-duration: 0.4s;
+}
+.mylist:hover{
+  color: #000;
+}
+.list{
+  text-align: left;
+  padding: 10px;
+  color: white;
+  background-color: #32373B;
+  border: 1px solid #667;
+  border-radius: 15px;
+  overflow: auto;
+}
+.list p{
+  display: inline-block;
+
+}
+.list > h3{
+  display: inline-block;
+
+}
+.delete>button{
+    background-color: #f75b5b;
+    border-radius: 10px;
+    width: 2%;
+    height: 2%;
+    height: auto;
+    transition-duration: 0.4s;
+    font-size: 2vw;
+    padding-left: 0.05%;
+
+
+}
+/* end MAKE HAMBURGER */
+
+/* section MODAL MESSAGE*/
+.modal, .modalrem {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  
+  background-color: rgba(0,0,0,0.4); /* Black opacity */
+
+}
+
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  display:block;
+  color: white;
+  background-color: #32373B;
+  border: 1px solid #667;
+  border-radius: 15px;
+}
+
+.close, .closerem{
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.closerem:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* end MODAL MESSAGE */
+
+
+
+
+/* section ABOUTUS */
+
+.aboutus{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.component{
+  cursor:alias;
+  user-select: none;
+  display: block;
+  font-size: 3vw;
+  position: absolute;
+  color:black;
+  background-color: rgba(222, 184, 135, 0.658);
+  border-radius: 20px;
+  margin: 3%;
+  padding: 10px;
+
+  
+}
+
+
+
+.box img{
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50px;
+}
+
+
+
+.box{
+  display:none;
+  position: absolute;
+  color:black;
+  background-color: rgba(222, 184, 135, 0.658);
+  left: 35vw;
+  bottom: 10%;
+  border: black 1px solid;
+  border-radius: 50px;
+  box-shadow: 5px 10px 8px black;
+
+}
+.box div:nth-child(2){
+  margin-left: 5vw;
+} 
+
+
+#image-chef, #image-waiter{
+  display: flex;
+  flex: 30%;
+}
+#image-chef{
+  display: none;
+}
+
+
+
+.name{
+  font-size: 2vw;
+}
+.bio{
+  font-size: 1.5vw;
+}
+
+
+
+/* end ABOUTUS */
+
+
+
+
+hr{
+  margin-left: 20%;
+  margin-right:20%;
+}
+
+
+
+
+/* section MODIFY INFO */
+#infouser>p{
+  color:#ffffff;
+}
+#infouser>span{
+  color: black;
+  font-weight: bold ;
+}
+
+#modify{
+  float:right;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  margin-left:160px;
+  margin-top: 30px;
+  background-color: #32373b8e;
+
+  
+
+}
+#hiddenmodify{
+  display:none;
+  color:white;
+}
+
+#modifydb{
+  font-size: 20px;
+}
+#remove-account{
+  margin-right: 7%;
+  margin-left:5%;
+}
+/* end MODIFY INFO */
+
+.popup { /* message hamberger add to cart*/
+  font-size: 3vw;
+  color: white;
+  display: none;
+  background-color: rgba(54, 190, 54, 0.568);
+  margin-left:25%;
+  margin-right: 25%;
+  border-radius: 50px;
+
+  
+}
+
+.main{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.list>h3{
+  cursor: pointer;
+}
+
+#text-bottom{
+  padding-top: 20px;
+  font-size: 2vw;
+}

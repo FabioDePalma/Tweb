@@ -1,0 +1,28 @@
+#divcart{
+background-color: rgba(255, 255, 255, 0.726);
+height: auto;
+border-radius: 50px;
+padding: 3%;
+margin-top: 2%;
+}
+.cart-content{
+    display: grid;
+    grid-template-columns: 0 50% 20% 10% 10%; 
+    border-bottom: rgb(68, 66, 66) 2px solid;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+}
+
+.quantity > input{
+    width: 15%;
+    
+}
+.quantity{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.total-price{
+    color: white;
+  }

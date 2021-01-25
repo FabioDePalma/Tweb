@@ -1,0 +1,2 @@
+[0107/002354.035:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)
+[0107/164449.943:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)

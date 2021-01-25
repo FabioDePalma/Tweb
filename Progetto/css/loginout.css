@@ -1,0 +1,58 @@
+*{
+    text-align: center;
+}
+form{
+    display: inline-block;
+}
+fieldset{
+    display:block;
+    float: left;
+    color: white;
+    background-color: #32373B;
+    border: 1px solid #667;
+    border-radius: 15px;
+
+
+}
+legend{
+    background-color:#4A5859;
+    
+}
+button{
+    display: inline-block;
+  background-color: #32373B;
+  color: white;
+  font-size: 20px;
+
+
+  border-radius: 15px;
+  transition-duration: 0.4s;
+}
+button:hover{
+    background-color: white; 
+}
+.fild, .hiddenmodify{
+    display: block;
+
+    border-right: 5px solid #E6A561;
+    border-left: 5px solid #E6A561;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+#login{
+    margin-bottom: 238px;
+}
+#err{
+    display:none;
+    color: white;
+    background-color: rgb(85, 21, 1);;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    padding-top: 7px;
+}

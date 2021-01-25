@@ -9,6 +9,7 @@ body{
     height: 400px;
     margin: auto;
     position: relative;
+    
 }
 
 #puzzlearea > div{
@@ -18,4 +19,14 @@ body{
     font-size: 40pt;
     position: absolute;
     background-image: url("background.jpg");
+}
+#divtime{
+    float: right;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+#selector{
+    display: none;
 }

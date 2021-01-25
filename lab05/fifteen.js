@@ -10,9 +10,13 @@ window.onload = startGame;
 var emptyX = 300;
 var emptyY = 300;
 
+var MAX_TIME = 5;
+var time = null;
 var divBlock;
 
 function startGame(){
+    emptyX = 300;
+    emptyY = 300;
     //start
     divBlock = document.querySelectorAll("#puzzlearea > div");
     var button = document.getElementById("shufflebutton");
@@ -24,6 +28,7 @@ function startGame(){
     var i = 0;
     for(var y = 0; y < 400 ; y+=100){
         for(var x = 0; x < 400 && i<15; x+=100){
+
 
             divBlock[i].style.left = x + "px"; //sposto sull'asse X
             divBlock[i].style.top = y +"px";
@@ -90,6 +95,33 @@ function shuffle(){
         var random = Math.floor((Math.random() * 15));
         move(divBlock[random]);
     }
+    $("#time").html(MAX_TIME);
+    time = setInterval(tempo, 1000);
+}
+function tempo(){
+    var second = increment("#time");
+    if(second <= 0){
+        lose("#time");
+    }
+}
+function lose(){
+    clearInterval(time);
+    $("#selector").css("display","block");
+    $("#puzzlearea").css("display", "none");
+    $("#selector").dialog({
+        modal: true,
+        title: "you lose",
+        close: startGame
+    });
+    $("#puzzlearea").css("display", "block");
+    $("#selector").css("display","none");
+    
+}
+
+function increment(id){
+    var number = parseInt($(id).html()) -1;
+    $(id).html(number);
+    return number;
 }
 
     /**
