@@ -12,6 +12,7 @@
     facendo click sul carrello verranno mostrati tutti i panini inseriti nel carrello
 
     questa pagina riguarda il login
+    GRUSSOOOOOOOOO <3
 
  -->
 <!DOCTYPE html>
